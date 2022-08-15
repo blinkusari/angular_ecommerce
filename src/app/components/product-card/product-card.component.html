@@ -1,0 +1,8 @@
+ <a class="block relative h-48 rounded overflow-hidden bg-white" [routerLink]="['/product', product.id]">
+    <img alt="ecommerce" class="object-contain object-center w-full h-full block p-6" [src]="product.image">
+  </a>
+ <div class="mt-4">
+    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1 uppercase">{{ product.category }}</h3>
+    <h2 class="text-white title-font text-lg font-medium">{{ product.title }}</h2>
+    <p class="mt-1">${{ product.price }}</p>
+  </div>

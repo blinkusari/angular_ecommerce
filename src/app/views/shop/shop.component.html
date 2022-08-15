@@ -1,0 +1,16 @@
+<div class="bg-gray-900">
+  <div class="container px-10">
+    <select (change)="onCategoryChange($event)"
+            class="block w-52 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+            name="animals">
+      <option value="">
+        Select an option
+      </option>
+      <option *ngFor="let c of categories" [ngValue]="c" [value]="c">
+        {{ c }}
+      </option>
+    </select>
+  </div>
+</div>
+
+<app-products-list [products]="products"></app-products-list>
